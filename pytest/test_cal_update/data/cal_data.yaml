@@ -1,0 +1,48 @@
+add_data:
+  - [1,1,2]
+  - [1,0,1]
+  - [-1,1,0]
+  - [-1,0,-1]
+add_ids:
+  - int
+  - int-zero
+  - minus-positive
+  - minus-zero
+add_data_float:
+  - [0.1,0.03,0.13]
+  - [0.3,0,0.3]
+  - [-3,-0.3,-3.3]
+add_ids_float:
+  - float
+  - float-zero
+  - minus-float
+add_data_fail:
+  - [1,"a1",TypeError]
+add_ids_fail:
+  - int-str
+div_data:
+  - [1,1,1]
+  - [0,1,0]
+  - [-1,1,-1]
+  - [0,-1,0]
+div_ids:
+  - int
+  - int-zero
+  - minus-positive
+  - minus-zero
+div_data_float:
+  - [0.01,0.1,0.1]
+  - [0,0.3,0]
+  - [-3,-0.3,10]
+div_ids_float:
+  - float
+  - float-zero
+  - minus-float
+div_data_fail:
+  - [1,"a0",TypeError]
+div_ids_fail:
+  - int-str
+div_data_fail_zero:
+  - [1,0,"ZeroDivisionError"]
+div_ids_fail_zero:
+  - zero
